@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="TechNova - Soluciones tecnológicas innovadoras.">
+    <meta name="keywords" content="tecnología, desarrollo web, consultoría, TechNova">
+    <meta name="author" content="TechNova">
+    <meta property="og:title" content="TechNova - Innovación a tu alcance">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <title>TechNova - Inicio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .hero {
+            background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero.jpg') center/cover no-repeat;
+            color: white;
+            padding: 120px 0;
+        }
+        .section { padding: 60px 0; }
+        .footer { background: #212529; color: #ccc; }
+    </style>
+</head>
+<body>
+    <!-- Barra de navegación -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <svg width="40" height="40" viewBox="0 0 40 40" xmlns="http://www.w3.org/2000/svg" style="vertical-align: middle; margin-right: 8px;">
+                    <circle cx="20" cy="20" r="18" fill="#0d6efd" stroke="white" stroke-width="2"/>
+                    <text x="20" y="26" font-size="18" font-weight="bold" fill="white" text-anchor="middle" font-family="Arial, sans-serif">TN</text>
+                </svg>
+                <span data-lang="es">TechNova</span><span data-lang="en" style="display:none">TechNova</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navprincipal">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navprincipal">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link active" href="#inicio" data-lang="es">Inicio</a><a class="nav-link active" href="#inicio" data-lang="en" style="display:none">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#nosotros" data-lang="es">Nosotros</a><a class="nav-link" href="#nosotros" data-lang="en" style="display:none">About</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicios" data-lang="es">Servicios</a><a class="nav-link" href="#servicios" data-lang="en" style="display:none">Services</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#equipo" data-lang="es">Equipo</a><a class="nav-link" href="#equipo" data-lang="en" style="display:none">Team</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#precios" data-lang="es">Precios</a><a class="nav-link" href="#precios" data-lang="en" style="display:none">Prices</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contacto" data-lang="es">Contacto</a><a class="nav-link" href="#contacto" data-lang="en" style="display:none">Contact</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="langDropdown" role="button" data-bs-toggle="dropdown">
+                            🌐 <span id="currentLangFlag">ES</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end">
+                            <li><a class="dropdown-item" href="#" onclick="cambiarIdioma('es')">🇪🇸 Español</a></li>
+                            <li><a class="dropdown-item" href="#" onclick="cambiarIdioma('en')">🇬🇧 English</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero text-center" id="inicio">
+        <div class="container">
+            <h1 class="display-3 fw-bold" data-lang="es">Impulsamos tu transformación digital</h1>
+            <h1 class="display-3 fw-bold" data-lang="en" style="display:none">We boost your digital transformation</h1>
+            <p class="lead mb-4" data-lang="es">Soluciones tecnológicas a medida para hacer crecer tu empresa</p>
+            <p class="lead mb-4" data-lang="en" style="display:none">Tailor-made technology solutions to grow your business</p>
+            <a href="#contacto" class="btn btn-primary btn-lg" data-lang="es">Contáctanos</a>
+            <a href="#contacto" class="btn btn-primary btn-lg" data-lang="en" style="display:none">Contact us</a>
+        </div>
+    </header>
+
+    <!-- Nosotros -->
+    <section id="nosotros" class="section bg-light">
+        <div class="container">
+            <h2 class="display-5 text-center mb-4" data-lang="es">Sobre Nosotros</h2>
+            <h2 class="display-5 text-center mb-4" data-lang="en" style="display:none">About Us</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <img src="oficina.jpg" alt="Oficina" class="img-fluid rounded shadow">
+                </div>
+                <div class="col-md-6">
+                    <p data-lang="es"><strong>TechNova</strong> nace en 2020 con la misión de acercar la tecnología más avanzada a pymes.</p>
+                    <p data-lang="en" style="display:none"><strong>TechNova</strong> was founded in 2020 to bring the most advanced technology to SMEs.</p>
+                    <p data-lang="es">Nuestro equipo combina experiencia en desarrollo web, IA y consultoría.</p>
+                    <p data-lang="en" style="display:none">Our team combines expertise in web development, AI and consulting.</p>
+                    <blockquote class="blockquote" data-lang="es">“Innovación, compromiso y resultados.”</blockquote>
+                    <blockquote class="blockquote" data-lang="en" style="display:none">“Innovation, commitment, and results.”</blockquote>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Servicios -->
+    <section id="servicios" class="section">
+        <div class="container">
+            <h2 class="display-5 text-center mb-5" data-lang="es">Nuestros Servicios</h2>
+            <h2 class="display-5 text-center mb-5" data-lang="en" style="display:none">Our Services</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="servicio1.jpg" class="card-img-top" alt="Desarrollo web">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="es">Desarrollo Web</h5>
+                            <h5 class="card-title" data-lang="en" style="display:none">Web Development</h5>
+                            <p class="card-text" data-lang="es">Creamos sitios modernos, responsivos y optimizados para buscadores.</p>
+                            <p class="card-text" data-lang="en" style="display:none">We create modern, responsive, search-optimized websites.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="servicio2.jpg" class="card-img-top" alt="Consultoría">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="es">Consultoría IT</h5>
+                            <h5 class="card-title" data-lang="en" style="display:none">IT Consulting</h5>
+                            <p class="card-text" data-lang="es">Analizamos tus procesos y recomendamos la mejor hoja de ruta digital.</p>
+                            <p class="card-text" data-lang="en" style="display:none">We analyze your processes and recommend the best digital roadmap.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="card h-100 shadow-sm">
+                        <img src="servicio3.jpg" class="card-img-top" alt="Soporte">
+                        <div class="card-body">
+                            <h5 class="card-title" data-lang="es">Soporte 24/7</h5>
+                            <h5 class="card-title" data-lang="en" style="display:none">24/7 Support</h5>
+                            <p class="card-text" data-lang="es">Mantenimiento y asistencia continua para que nunca te detengas.</p>
+                            <p class="card-text" data-lang="en" style="display:none">Continuous maintenance and support so you never stop.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Equipo -->
+    <section id="equipo" class="section bg-light">
+        <div class="container">
+            <h2 class="display-5 text-center mb-5" data-lang="es">Conoce a nuestro equipo</h2>
+            <h2 class="display-5 text-center mb-5" data-lang="en" style="display:none">Meet our team</h2>
+            <div class="row g-4 justify-content-center">
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <img src="equipo1.jpg" class="card-img-top rounded-circle w-75 mx-auto mt-3" alt="María">
+                        <div class="card-body">
+                            <h5>María López</h5>
+                            <p class="text-muted" data-lang="es">CEO & Fundadora</p>
+                            <p class="text-muted" data-lang="en" style="display:none">CEO & Founder</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <img src="equipo2.jpg" class="card-img-top rounded-circle w-75 mx-auto mt-3" alt="Carlos">
+                        <div class="card-body">
+                            <h5>Carlos Gómez</h5>
+                            <p class="text-muted">CTO</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="card text-center">
+                        <img src="equipo3.jpg" class="card-img-top rounded-circle w-75 mx-auto mt-3" alt="Lucía">
+                        <div class="card-body">
+                            <h5>Lucía Fernández</h5>
+                            <p class="text-muted" data-lang="es">Diseñadora UX/UI</p>
+                            <p class="text-muted" data-lang="en" style="display:none">UX/UI Designer</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Precios -->
+    <section id="precios" class="section">
+        <div class="container">
+            <h2 class="display-5 text-center mb-4" data-lang="es">Planes y Precios</h2>
+            <h2 class="display-5 text-center mb-4" data-lang="en" style="display:none">Plans & Pricing</h2>
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover align-middle">
+                    <thead class="table-dark">
+                        <tr>
+                            <th data-lang="es">Plan</th><th data-lang="en" style="display:none">Plan</th>
+                            <th data-lang="es">Precio/mes</th><th data-lang="en" style="display:none">Price/month</th>
+                            <th data-lang="es">Incluye</th><th data-lang="en" style="display:none">Includes</th>
+                            <th data-lang="es">Soporte</th><th data-lang="en" style="display:none">Support</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td data-lang="es">Básico</td><td data-lang="en" style="display:none">Basic</td>
+                            <td>99 €</td>
+                            <td data-lang="es">Web 5 páginas, hosting</td><td data-lang="en" style="display:none">5-page web, hosting</td>
+                            <td data-lang="es">Email</td><td data-lang="en" style="display:none">Email</td>
+                            <td><a href="#" class="btn btn-sm btn-outline-primary" data-lang="es">Elegir</a><a href="#" class="btn btn-sm btn-outline-primary" data-lang="en" style="display:none">Choose</a></td>
+                        </tr>
+                        <tr>
+                            <td data-lang="es">Profesional</td><td data-lang="en" style="display:none">Professional</td>
+                            <td>199 €</td>
+                            <td data-lang="es">Web 10 páginas, SEO, dominio</td><td data-lang="en" style="display:none">10-page web, SEO, domain</td>
+                            <td data-lang="es">24/7 Teléfono</td><td data-lang="en" style="display:none">24/7 Phone</td>
+                            <td><a href="#" class="btn btn-sm btn-outline-primary" data-lang="es">Elegir</a><a href="#" class="btn btn-sm btn-outline-primary" data-lang="en" style="display:none">Choose</a></td>
+                        </tr>
+                        <tr>
+                            <td data-lang="es">Empresa</td><td data-lang="en" style="display:none">Enterprise</td>
+                            <td>399 €</td>
+                            <td data-lang="es">Tienda online, analítica, SSL</td><td data-lang="en" style="display:none">Online store, analytics, SSL</td>
+                            <td data-lang="es">Priority</td><td data-lang="en" style="display:none">Priority</td>
+                            <td><a href="#" class="btn btn-sm btn-outline-primary" data-lang="es">Elegir</a><a href="#" class="btn btn-sm btn-outline-primary" data-lang="en" style="display:none">Choose</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
+    <!-- Multimedia -->
+    <section class="section bg-light">
+        <div class="container">
+            <h2 class="display-5 text-center mb-4" data-lang="es">Conócenos en acción</h2>
+            <h2 class="display-5 text-center mb-4" data-lang="en" style="display:none">See us in action</h2>
+            <div class="row g-4">
+                <div class="col-md-8">
+                    <div class="ratio ratio-16x9">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Video presentación" allowfullscreen></iframe>
+                    </div>
+                    <p class="text-muted mt-2" data-lang="es">Vídeo corporativo de presentación.</p>
+                    <p class="text-muted mt-2" data-lang="en" style="display:none">Corporate presentation video.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 data-lang="es">Nuestro himno</h5>
+                    <h5 data-lang="en" style="display:none">Our anthem</h5>
+                    <audio controls class="w-100">
+                        <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                    </audio>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section bg-light">
+        <div class="container">
+            <h2 class="display-5 text-center mb-4" data-lang="es">Contáctanos</h2>
+            <h2 class="display-5 text-center mb-4" data-lang="en" style="display:none">Contact Us</h2>
+            <p class="text-center" data-lang="es">¿Tienes un proyecto en mente? Rellena nuestro formulario y te responderemos en menos de 24h.</p>
+            <p class="text-center" data-lang="en" style="display:none">Have a project in mind? Fill out our form and we’ll get back to you within 24h.</p>
+            <div class="ratio" style="--bs-aspect-ratio: 100%;">
+                <iframe src="https://docs.google.com/forms/d/e/TU_ID/viewform?embedded=true" width="100%" height="800" frameborder="0">Cargando…</iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer pt-5 pb-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="text-white">TechNova</h5>
+                    <p data-lang="es">Soluciones que impulsan tu futuro digital.</p>
+                    <p data-lang="en" style="display:none">Solutions that drive your digital future.</p>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-white" data-lang="es">Enlaces rápidos</h5>
+                    <h5 class="text-white" data-lang="en" style="display:none">Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#" data-lang="es">Inicio</a><a href="#" data-lang="en" style="display:none">Home</a></li>
+                        <li><a href="#servicios" data-lang="es">Servicios</a><a href="#servicios" data-lang="en" style="display:none">Services</a></li>
+                        <li><a href="#contacto" data-lang="es">Contacto</a><a href="#contacto" data-lang="en" style="display:none">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="text-white" data-lang="es">Síguenos</h5>
+                    <h5 class="text-white" data-lang="en" style="display:none">Follow us</h5>
+                    <a href="#" class="text-white-50 me-2">Facebook</a>
+                    <a href="#" class="text-white-50 me-2">Twitter</a>
+                    <a href="#" class="text-white-50">LinkedIn</a>
+                </div>
+            </div>
+            <hr class="my-4 bg-secondary">
+            <div class="text-center">
+                <p>
+                    <a href="http://validator.w3.org/check?uri=referer">
+                        <img src="https://www.w3.org/Icons/valid-html401" alt="HTML Válido" height="31" width="88">
+                    </a>
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer">
+                        <img style="border:0;width:88px;height:31px" src="http://jigsaw.w3.org/css-validator/images/vcss-blue" alt="CSS Válido">
+                    </a>
+                </p>
+                <p class="small" data-lang="es">© 2025 TechNova. Todos los derechos reservados.</p>
+                <p class="small" data-lang="en" style="display:none">© 2025 TechNova. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Script cambio de idioma -->
+    <script>
+        function cambiarIdioma(idioma) {
+            document.querySelectorAll('[data-lang]').forEach(el => {
+                if (el.getAttribute('data-lang') === idioma) {
+                    el.style.display = '';
+                } else {
+                    el.style.display = 'none';
+                }
+            });
+            document.getElementById('currentLangFlag').textContent = idioma.toUpperCase();
+            document.documentElement.lang = idioma;
+
+            document.querySelectorAll('a[data-lang]').forEach(a => {
+                if (a.getAttribute('data-lang') === idioma) {
+                    a.style.display = 'inline-block';
+                } else {
+                    a.style.display = 'none';
+                }
+            });
+        }
+
+        window.addEventListener('DOMContentLoaded', () => {
+            const navLang = navigator.language || navigator.userLanguage;
+            if (navLang.startsWith('en')) {
+                cambiarIdioma('en');
+            } else {
+                cambiarIdioma('es');
+            }
+        });
+    </script>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
